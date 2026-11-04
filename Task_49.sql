@@ -1,5 +1,5 @@
--- Task #49
-
+-- Задание #49
+-- 1-й Вариант
 SELECT ROUND(
 		COUNT(student) * 100.0 / (
 			SELECT COUNT(student)
@@ -11,7 +11,7 @@ FROM Student_in_class sic
 	JOIN Class c ON sic.class = c.id
 WHERE name = '10 A';
 
--- or
+-- 2-й Вариант
 SELECT ROUND(
 		(
 			SELECT COUNT(*)
