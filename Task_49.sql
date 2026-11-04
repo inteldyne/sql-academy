@@ -7,8 +7,8 @@ SELECT ROUND(
 		),
 		4
 	) AS percent
-FROM Student_in_class
-	JOIN Class ON Student_in_class.class = Class.id
+FROM Student_in_class sic
+	JOIN Class c ON sic.class = c.id
 WHERE name = '10 A';
 
 -- or
