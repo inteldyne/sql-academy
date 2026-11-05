@@ -9,7 +9,7 @@ SELECT ROUND(
 	) AS percent
 FROM Student_in_class sic
 	JOIN Class c ON sic.class = c.id
-WHERE name = '10 A';
+WHERE c.name = '10 A';
 
 -- 2-й Вариант
 SELECT ROUND(
